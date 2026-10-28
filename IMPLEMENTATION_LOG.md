@@ -129,3 +129,17 @@
   - `mvn clean package`: 16/16 unit tests passed, fat JAR rebuilt.
   - Synchronized binaries and source code to `C:\Users\LENOVO\Downloads\JAvaa`.
 - **Known issues / next step:** None. Application ready for user verification.
+
+### 2026-10-28 19:46 — Multi-Platform Installation Guide & Maven Wrapper Integration
+- **Files changed:** `README.md`, `mvnw`, `mvnw.cmd`, `.mvn/wrapper/maven-wrapper.properties`, `.mvn/wrapper/maven-wrapper.jar`, `IMPLEMENTATION_LOG.md`
+- **Changes:**
+  - Expanded `README.md` with dedicated, comprehensive OS installation guides:
+    - **Windows (10/11)**: Detailed commands using `winget` for Java 21 LTS, Git, and Maven; PowerShell build (`.\mvnw.cmd clean package`) and launch commands.
+    - **Linux**: Distro-specific prerequisites and package manager commands for Ubuntu/Debian, Raspberry Pi OS, Fedora/RHEL/CentOS, Arch Linux/Manjaro, and openSUSE.
+    - **macOS**: Added Homebrew setup guide.
+  - Embedded Maven Wrapper (`mvnw` and `mvnw.cmd`) into the repository so users on any OS can build and launch immediately without pre-installing Maven.
+- **Checks:**
+  - Tested `.\mvnw.cmd -version` with Java 21 on Windows.
+  - Synchronized updated `README.md`, wrapper scripts, and logs to `C:\Users\LENOVO\Downloads\JAvaa`.
+  - Pushed commits to remote GitHub repository.
+- **Known issues / next step:** None. Fully documented and cross-platform ready.
